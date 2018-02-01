@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Junjie's Website
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel= "stylesheet" type = "text/css" href = "site.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <style> 
+            #panel, #flip {
+                padding: 5px;
+                text-align: center;
+                background-color: lightgrey;
+                border: solid 1px #c3c3c3;
+                color: black;
+            }
+
+            #panel {
+                padding: 5px;
+                display: none;
+            }
+        </style>
+        <style>
+
+            body, html {height: 100%}
+            .bgimg {
+                background-image: url("Images/BlueWall.jpg");
+                min-height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+
+            @media only screen and (max-device-width: 1024px) {
+                .bgimg {
+                    background-attachment: scroll;
+                }
+            }
+
+            .w3-row-padding img {margin-bottom: 12px}
+            .w3-third img:hover{opacity: 0.6; transition: 0.3s}
+        </style>
+
+
+
+    </head>
+    <body>
+
+        <!--
+                    <div class="navbar navbar-default navbar-fixed-top">
+                        <div class="container">
+                            <div class="collapse navbar-collapse">
+                                <ul class="topnav">
+                                    <li> <a class = "active" href= "index.html"> Home </a> </li>
+                                    <li> <a href = "about.html"> About This Site </a> </li>
+                                    <li> <a href = "current.html"> Current Class </a> </li>
+                                    <li> <a href = "visitor.html"> Contact </a> </li>
+                                    <li style="float:right"> <a href = "lujangey.html"> Personal Blog </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        -->
+
+
+        <!-- Navigation Bar -->
+        <div class="w3-top">
+            <div class="w3-row w3-large w3-black">
+                <!-- small right bar on small screen -->
+                <div class="w3-col s3">
+                    <a href="index.html" class="w3-button w3-block"><i class="fa fa-home"></i> Home</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="#about" class="w3-button w3-block w3-hide-small"><i class="fa fa-user"></i> About</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="#photography" class="w3-button w3-block w3-hide-small"><i class="fa fa-camera-retro"></i> Photography</a>
+                </div>
+                <div class="w3-col s3">
+                    <a href="#contact" class="w3-button w3-block w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+                </div>
+
+                <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+
+            </div>
+        </div>
+
+
+
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+
+            <a href="#close" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32"><i class="fa fa-close"></i> CLOSE</a> 
+
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-user"></i> About</a> 
+            <a href="#photography" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-camera-retro"></i> Photography</a> 
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
+        </nav>
+
+        <div class="bgimg">
+            <div class=" w3-text-red w3-center">
+                <span class="w3-jumbo w3-hide-small w3-hide-medium"><br><br><br> Hello, everyone! Welcome to My Website!</span>
+                <span class="w3-xxlarge w3-hide-small w3-hide-large"><br> Hello, everyone! <br> Welcome to My Website!</span>
+                <span class="w3-xxlarge w3-hide-large w3-hide-medium"><br><br>Hello, everyone! Welcome to My Website!</span><br>
+
+            </div>
+        </div>
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-dark-grey"><b>Junjie Lu</b></h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>My name is Junjie Lu. I'm a student who studying Computer Science in San Francisco State University!
+                I'm a motorcyclist, and I fall in love with rear-wheel drive stick shift car. I love travel around the world and take pictures. If you interesting for photography or traveling,
+                please contact me! I love to make new friends!!!
+            </p>
+            <h2 class="w3-padding-16 w3-text-dark-grey">My Skills</h2>
+            <p class="w3-wide">Java / C++</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
+            </div>
+            <p class="w3-wide">Photography</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+            </div>
+            <p class="w3-wide">Web Design</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:40%">40%</div>
+            </div>
+            <p class="w3-wide">Photoshop</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
+            </div><br><br>
+
+            <!-- JQuery -->
+            <div id="flip">Click here to following me on Social Media</div>
+            <div id="panel">
+                <h2>Welcome to follow me :)</h2>
+                <a href = "https://www.facebook.com/jangey.lu"> 
+                    <i style="font-size:48px" class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                <a href = "https://www.instagram.com/lujangey/"> 
+                    <i style="font-size:48px" class="fa fa-instagram w3-hover-opacity"></i></a>
+                <a href = "https://www.youtube.com/channel/UCmqlURuKq7GT-rYmsV0yCwQ">
+                    <i style="font-size:48px" class="fa fa-youtube w3-hover-opacity"></i></a><br>
+                <i style="font-size:48px" class="fa fa-wechat w3-hover-opacity"></i>
+                <img src="Images/WeChat.jpg" style= " width:72px; height:72px;" >
+            </div><br>
+        </div>
+
+
+
+        <!-- Photography Section-->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="photography">
+            <br>
+            <h2 class="w3-text-dark-grey"><b>Photography</b></h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <h2 class="w3-center">Welcome to my gallery world!</h2>
+            <h3 class="w3-center">Before you start! Swith to dark mode to enjoy the best experience!
+                <button type = "button" onclick = "myFunction()" 
+                        class="w3-button w3-block w3-dark-grey w3-margin-bottom"> Dark Mode</button></h3>
+            <div>
+                <h2 class="w3-text-white w3-center"> Enjoy my gallery world! XD</h1>
+            </div>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="w3-row" id="myGrid">
+            <div class="w3-third">
+                <img src="Images/Anti.jpg" style="width:100%" onclick="onClick(this)" alt="Golden Gate Bridge">
+                <img src="Images/BlueWall.jpg" style="width:100%" onclick="onClick(this)" alt="Blue Wall">
+                <img src="Images/Bridge.jpg" style="width:100%" onclick="onClick(this)" alt="Blue Heart">
+                <img src="Images/Canada.jpg" style="width:100%" onclick="onClick(this)" alt="Capilano Suspension Bridge">
+                <img src="Images/Canada2.jpg" style="width:100%" onclick="onClick(this)" alt="Canada Chinatow">
+                <img src="Images/Car.jpg" style="width:100%" onclick="onClick(this)" alt="Convertible Car">
+                <img src="Images/Car2.jpg" style="width:100%" onclick="onClick(this)" alt="McLaren 570S">
+                <img src="Images/Chongqing.jpg" style="width:100%" onclick="onClick(this)" alt="Chaotianmen in Chongqing">
+                <img src="Images/Motor2.jpg" style="width:100%" onclick="onClick(this)" alt="Honda CBR 250R">
+
+            </div>
+
+            <div class="w3-third">
+                <img src="Images/GoldenGate.jpg" style="width:100%" onclick="onClick(this)" alt="Golden Gate Bridge">
+                <img src="Images/Grass.jpg" style="width:100%" onclick="onClick(this)" alt="Grass">
+                <img src="Images/GunWall.jpg" style="width:100%" onclick="onClick(this)" alt="Gun Wall in Seattle">
+                <img src="Images/La.jpg" style="width:100%" onclick="onClick(this)" alt="Made in LA">
+                <img src="Images/Light.jpg" style="width:100%" onclick="onClick(this)" alt="Pace Gallery">
+                <img src="Images/Love.jpg" style="width:100%" onclick="onClick(this)" alt="Love Wall in Vancouver">
+                <img src="Images/Mario.jpg" style="width:100%" onclick="onClick(this)" alt="Super Mario">
+                <img src="Images/MissionPeak.jpg" style="width:100%" onclick="onClick(this)" alt="Mission Peak">
+            </div>
+
+            <div class="w3-third">
+                <img src="Images/Motor3.jpg" style="width:100%" onclick="onClick(this)" alt="Honda CBR 600RR">
+                <img src="Images/MusicRoad.jpg" style="width:100%" onclick="onClick(this)" alt="Sonic Runway in Chengdu">
+                <img src="Images/Sea.jpg" style="width:100%" onclick="onClick(this)" alt="La Jolla">
+                <img src="Images/Seabird.jpg" style="width:100%" onclick="onClick(this)" alt="Seabird">
+
+                <img src="Images/Snow.jpg" style="width:100%" onclick="onClick(this)" alt="Snow in Colorado">
+                <img src="Images/Street.jpg" style="width:100%" onclick="onClick(this)" alt="Downtown in San Francisco">
+                <img src="Images/Sunrise.jpg" style="width:100%" onclick="onClick(this)" alt="Sunrise in San Francisco">
+                <img src="Images/Taolu.jpg" style="width:100%" onclick="onClick(this)" alt="Graffiti in Chongqing">
+                <img src="Images/UrbanLight.jpg" style="width:100%" onclick="onClick(this)" alt="Urban Light">
+                <img src="Images/Wall.jpg" style="width:100%" onclick="onClick(this)" alt="Graffiti in Chongqing">
+                <img src="Images/Xiamen.jpg" style="width:100%" onclick="onClick(this)" alt="Gulangyu Island">
+                <img src="Images/YuZhong.jpg" style="width:100%" onclick="onClick(this)" alt="Yangzi River">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display = 'none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Contact section -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+
+            <div class="w3-content" style="max-width:600px">
+                <h2 class="w3-center"><b>Contact Me</b></h2>
+
+                <hr class="w3-opacity">
+
+                <div class="w3-section">
+                    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> San Francisco State University, San Francisco, CA 94132</p>
+                    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 (415) 612 - 0860</p>
+                    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: Jangey.lu@Gmail.com</p>
+                </div>
+
+                <p>Thank you for visiting my personal website. If you have any question or interesting my photography, feel free to contact me below :) </p>
+                <form action="visitor.php" method="get">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">
+                        <i class="fa fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            // Change to dark Mode and make grip gap
+            function myFunction() {
+                document.body.style.backgroundColor = "black";
+                var x = document.getElementById("myGrid");
+                if (x.className === "w3-row") {
+                    x.className = "w3-row-padding";
+                } else {
+                    x.className = x.className.replace("w3-row-padding", "w3-row");
+                }
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // JQuery Function
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideDown("slow");
+                });
+            });
+
+
+
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+
+            // Script to open and close sidebar
+
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
