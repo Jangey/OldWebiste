@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Junjie's Website
+            Jangey's Blog
         </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,23 +53,6 @@
     </head>
     <body>
 
-        <!--
-                    <div class="navbar navbar-default navbar-fixed-top">
-                        <div class="container">
-                            <div class="collapse navbar-collapse">
-                                <ul class="topnav">
-                                    <li> <a class = "active" href= "index.html"> Home </a> </li>
-                                    <li> <a href = "about.html"> About This Site </a> </li>
-                                    <li> <a href = "current.html"> Current Class </a> </li>
-                                    <li> <a href = "visitor.html"> Contact </a> </li>
-                                    <li style="float:right"> <a href = "lujangey.html"> Personal Blog </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-        -->
-
-
         <!-- Navigation Bar -->
         <div class="w3-top">
             <div class="w3-row w3-large w3-black">
@@ -78,10 +61,10 @@
                     <a href="index.html" class="w3-button w3-block"><i class="fa fa-home"></i> Home</a>
                 </div>
                 <div class="w3-col s3">
-                    <a href="#about" class="w3-button w3-block w3-hide-small"><i class="fa fa-user"></i> About</a>
+                    <a href="#photography" class="w3-button w3-block w3-hide-small"><i class="fa fa-camera-retro"></i> Photography</a>
                 </div>
                 <div class="w3-col s3">
-                    <a href="#photography" class="w3-button w3-block w3-hide-small"><i class="fa fa-camera-retro"></i> Photography</a>
+                    <a href="#video" class="w3-button w3-block w3-hide-small"><i class="fa fa-video-camera"></i> Video</a>
                 </div>
                 <div class="w3-col s3">
                     <a href="#contact" class="w3-button w3-block w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
@@ -99,79 +82,25 @@
 
             <a href="#close" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32"><i class="fa fa-close"></i> CLOSE</a> 
 
-            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-user"></i> About</a> 
-            <a href="#photography" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-camera-retro"></i> Photography</a> 
+            <a href="#photography" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-user"></i> Photography</a> 
+            <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-camera-retro"></i> Video</a> 
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
         </nav>
 
+
+
         <div class="bgimg">
-            <div class=" w3-text-red w3-center">
-                <span class="w3-jumbo w3-hide-small w3-hide-medium"><br><br><br> Hello, everyone! Welcome to My Website!</span>
-                <span class="w3-xxlarge w3-hide-small w3-hide-large"><br> Hello, everyone! <br> Welcome to My Website!</span>
-                <span class="w3-xxlarge w3-hide-large w3-hide-medium"><br><br>Hello, everyone! Welcome to My Website!</span><br>
-
-            </div>
         </div>
-        <!-- About Section -->
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-            <h2 class="w3-text-dark-grey"><b>Junjie Lu</b></h2>
-            <hr style="width:200px" class="w3-opacity">
-            <p>My name is Junjie Lu. I'm a student who studying Computer Science in San Francisco State University!
-                I'm a motorcyclist, and I fall in love with rear-wheel drive stick shift car. I love travel around the world and take pictures. If you interesting for photography or traveling,
-                please contact me! I love to make new friends!!!
-            </p>
-            <h2 class="w3-padding-16 w3-text-dark-grey">My Skills</h2>
-            <p class="w3-wide">Java / C++</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
-            </div>
-            <p class="w3-wide">Photography</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-            </div>
-            <p class="w3-wide">Web Design</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:40%">40%</div>
-            </div>
-            <p class="w3-wide">Photoshop</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
-            </div><br><br>
-
-            <!-- JQuery -->
-            <div id="flip">Click here to following me on Social Media</div>
-            <div id="panel">
-                <h2>Welcome to follow me :)</h2>
-                <a href = "https://www.facebook.com/jangey.lu"> 
-                    <i style="font-size:48px" class="fa fa-facebook-official w3-hover-opacity"></i></a>
-                <a href = "https://www.instagram.com/lujangey/"> 
-                    <i style="font-size:48px" class="fa fa-instagram w3-hover-opacity"></i></a>
-                <a href = "https://www.youtube.com/channel/UCmqlURuKq7GT-rYmsV0yCwQ">
-                    <i style="font-size:48px" class="fa fa-youtube w3-hover-opacity"></i></a><br>
-                <i style="font-size:48px" class="fa fa-wechat w3-hover-opacity"></i>
-                <img src="Images/WeChat.jpg" style= " width:72px; height:72px;" >
-            </div><br>
-        </div>
-
-
 
         <!-- Photography Section-->
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="photography">
+        <div class=" w3-content w3-justify w3-text-grey w3-padding-64" id="photography">
             <br>
             <h2 class="w3-text-dark-grey"><b>Photography</b></h2>
             <hr style="width:200px" class="w3-opacity">
-
-            <h2 class="w3-center">Welcome to my gallery world!</h2>
-            <h3 class="w3-center">Before you start! Swith to dark mode to enjoy the best experience!
-                <button type = "button" onclick = "myFunction()" 
-                        class="w3-button w3-block w3-dark-grey w3-margin-bottom"> Dark Mode</button></h3>
-            <div>
-                <h2 class="w3-text-white w3-center"> Enjoy my gallery world! XD</h1>
-            </div>
         </div>
 
         <!-- Photo Grid -->
-        <div class="w3-row" id="myGrid">
+        <div class="w3-row-padding" id="myGrid">
             <div class="w3-third">
                 <img src="Images/Anti.jpg" style="width:100%" onclick="onClick(this)" alt="Golden Gate Bridge">
                 <img src="Images/BlueWall.jpg" style="width:100%" onclick="onClick(this)" alt="Blue Wall">
@@ -222,10 +151,27 @@
             </div>
         </div>
 
+        <!-- Video Section -->
+        <div class=" w3-content w3-justify w3-text-grey w3-padding-64" id="video">
+            <br>
+            <h2 class="w3-text-dark-grey"><b>Photography</b></h2>
+            <hr style="width:200px" class="w3-opacity">
 
+            <p><h3 class="w3-text-black"><b>Trip to Chongqing & Chengdu</b></h3></p>
+        <div class="w3-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/8ctV5vTmFE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+        </div>
 
+        <p><h3 class="w3-text-black"><b>Trip to Glenwood Springs</b></h3>
+        <div class="w3-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/vM3QkD2kO5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+        </div>
 
-        <!-- Contact section -->
+        <p><h3 class="w3-text-black"><b>Trip to Seattle & Vancouver</b></h3>
+        <div class="w3-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/pY0F7yqVGNo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class=" w3-content w3-justify w3-text-grey w3-padding-64" id="photography">
         <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
 
             <div class="w3-content" style="max-width:600px">
@@ -233,29 +179,23 @@
 
                 <hr class="w3-opacity">
 
-                <div class="w3-section">
-                    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> San Francisco State University, San Francisco, CA 94132</p>
+                <div class="w3-section w3-center">
+                    <p><a href = "https://www.facebook.com/jangey.lu">
+                            <i style="font-size:48px" class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href = "https://www.instagram.com/lujangey/"> 
+                            <i style="font-size:48px" class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href = "https://www.youtube.com/channel/UCmqlURuKq7GT-rYmsV0yCwQ">
+                            <i style="font-size:48px" class="fa fa-youtube w3-hover-opacity"></i></a></p>
+                    <p><i style="font-size:48px" class="fa fa-wechat w3-hover-opacity"></i>
+                        <img src="Images/WeChat.jpg" style= " width:72px; height:72px;" > </p>
+
+                    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> San Francisco </p>
                     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 (415) 612 - 0860</p>
                     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: Jangey.lu@Gmail.com</p>
+
+
                 </div>
 
-                <p>Thank you for visiting my personal website. If you have any question or interesting my photography, feel free to contact me below :) </p>
-                <form action="visitor.php" method="get">
-                    <div class="w3-section">
-                        <label>Name</label>
-                        <input class="w3-input w3-border" type="text" name="Name" required>
-                    </div>
-                    <div class="w3-section">
-                        <label>Email</label>
-                        <input class="w3-input w3-border" type="text" name="Email" required>
-                    </div>
-                    <div class="w3-section">
-                        <label>Message</label>
-                        <input class="w3-input w3-border" type="text" name="Message" required>
-                    </div>
-                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">
-                        <i class="fa fa-paper-plane"></i> Send Message</button>
-                </form>
             </div>
         </div>
 
@@ -304,5 +244,5 @@
                 document.getElementById("myOverlay").style.display = "none";
             }
         </script>
-    </body>
+</body>
 </html>
